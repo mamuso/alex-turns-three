@@ -195,27 +195,48 @@ h3 {
 
 .card {
   position: relative;
+  display: grid;
+  grid-template-columns: 580px auto;
+  grid-template-areas: 
+    "video form";
+  justify-items: center;
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 5px;
   padding: 0;
   overflow: hidden;
+  width: 1200px;
   -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  .video {
+    grid-area: video;
+  }
   video {
     position: relative;
     display: block;
-    width: 600px;
-    height: 600px;
+    width: 590px;
+    height: 590px;
     background: #000000;
   }
   .color-shade {
     position: absolute;
     top: 0;
     left: 0;
-    width: 600px;
-    height: 600px;
-    background: linear-gradient(103.6deg, rgba(228, 10, 93, 0.13) 9.18%, rgba(82, 9, 93, 0.13) 50.46%, rgba(82, 139, 229, 0.13) 88.78%);
+    width: 592px;
+    height: 592px;
+    background: linear-gradient(105deg, rgba(228, 10, 93, 0.24) 10%, rgba(82, 9, 93, 0.24) 50%, rgba(82, 139, 229, 0.24) 88%);
+  }
+  .iframe-container {
+    position: relative;
+    grid-area:form;
+    width: 510px;
+    height: 570px;
+    overflow: hidden;
+    iframe {
+      position: absolute;
+      top: -30px;
+      left: -20px;
+    }
   }
 }
 
