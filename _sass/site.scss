@@ -194,6 +194,7 @@ h3 {
 }
 
 .card {
+  position: relative;
   background-color: #fff;
   border-radius: 4px;
   padding: 0;
@@ -202,10 +203,19 @@ h3 {
   -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
   video {
+    position: relative;
     display: block;
     width: 600px;
     height: 600px;
-    background: red;
+    background: #000000;
+  }
+  .color-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(103.6deg, rgba(228, 10, 93, 0.13) 9.18%, rgba(82, 9, 93, 0.13) 50.46%, rgba(82, 139, 229, 0.13) 88.78%);
   }
 }
 
