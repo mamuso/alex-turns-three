@@ -210,6 +210,18 @@ h3 {
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
   .video {
     grid-area: video;
+    h2 {
+      position: absolute;
+      width: 400px;
+      left: 48px;
+      bottom: 12px;
+      z-index: 3;
+      color: #FFFFFF;
+      span {
+        display: block;
+        font-size: 96px;
+      }
+    }
   }
   video {
     position: relative;
@@ -237,14 +249,6 @@ h3 {
       top: -30px;
       left: -20px;
     }
-  }
-  .three {
-    position: absolute;
-    z-index: 2;
-    top: 220px;
-    left: 470px;
-    width: 140px;
-    height: 140px;
   }
 }
 
