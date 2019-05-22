@@ -239,16 +239,16 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 592px;
-    height: 592px;
+    width: 590px;
+    height: 590px;
     background: linear-gradient(105deg, rgba(228, 10, 93, 0.32) 10%, rgba(82, 9, 93, 0.32) 50%, rgba(82, 139, 229, 0.32) 88%);
   }
   .iframe-container {
     background: #FFFFFF;
     position: relative;
     grid-area:form;
-    width: 510px;
-    height: 570px;
+    width: 550px;
+    height: 580px;
     overflow: hidden;
     iframe {
       position: absolute;
@@ -301,7 +301,7 @@ h3 {
       }
     .iframe-container {
       width: 100%;
-      height: 525px;
+      height: 515px;
       iframe {
         left: -8px; 
         width: 104%;
