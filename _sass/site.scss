@@ -214,7 +214,8 @@ h3 {
       position: absolute;
       width: 400px;
       left: 48px;
-      bottom: 12px;
+      bottom: 4px;
+      line-height: 1; 
       z-index: 3;
       color: #FFFFFF;
       span {
@@ -252,9 +253,10 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 320px) {
+@media only screen and (max-width: 1024px) and (min-width: 320px) {
   body {
     padding: 1.2rem;
+    border: none;
   }
   .site-intro {
     margin: 6.8rem 0 16rem;
@@ -265,5 +267,22 @@ h3 {
   }
   .site-footer a .emoji {
     display: none;
+  }
+  .card-container {
+    height: 100vh;
+    display: block;
+    justify-items: none;
+    align-items: none;
+  }
+  .card {
+    width: 100%;
+    grid-template-columns: auto;
+    grid-template-areas: 
+      "video"
+      "form";
+      video {
+        width: 100%;
+        height: auto;
+      }
   }
 }
