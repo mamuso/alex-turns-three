@@ -224,8 +224,12 @@ h3 {
       }
     }
   }
-  video {
+  .video-wrapper {
     position: relative;
+    width: 100%;
+    display: block;
+  }
+  video {
     display: block;
     width: 590px;
     height: 590px;
