@@ -238,6 +238,14 @@ h3 {
       left: -20px;
     }
   }
+  .three {
+    position: absolute;
+    z-index: 2;
+    top: 220px;
+    left: 470px;
+    width: 140px;
+    height: 140px;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
